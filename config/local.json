@@ -142,9 +142,9 @@
     "deleteitem_endpoint": "http://localhost:8080/api/cart/delete?token={{token}}&cartId={{cartId}}",
     "pull_endpoint": "http://localhost:8080/api/cart/pull?token={{token}}&cartId={{cartId}}",
     "totals_endpoint": "http://localhost:8080/api/cart/totals?token={{token}}&cartId={{cartId}}",
-    "paymentmethods_endpoint": "http://localhost:8080/api/cart/payment-methods?token={{token}}&cartId={{cartId}}",
-    "shippingmethods_endpoint": "http://localhost:8080/api/cart/shipping-methods?token={{token}}&cartId={{cartId}}",
-    "shippinginfo_endpoint": "http://localhost:8080/api/cart/shipping-information?token={{token}}&cartId={{cartId}}",
+    "paymentmethods_endpoint": "http://vuestorefrontcoreshop.localhost/vsbridge/cart/payment-methods?token={{token}}&cartId={{cartId}}",
+    "shippingmethods_endpoint": "http://vuestorefrontcoreshop.localhost/vsbridge/cart/shipping-methods?token={{token}}&cartId={{cartId}}",
+    "shippinginfo_endpoint": "http://vuestorefrontcoreshop.localhost/vsbridge/cart/shipping-information?token={{token}}&cartId={{cartId}}",
     "collecttotals_endpoint": "http://localhost:8080/api/cart/collect-totals?token={{token}}&cartId={{cartId}}",
     "deletecoupon_endpoint": "http://localhost:8080/api/cart/delete-coupon?token={{token}}&cartId={{cartId}}",
     "applycoupon_endpoint": "http://localhost:8080/api/cart/apply-coupon?token={{token}}&cartId={{cartId}}&coupon={{coupon}}"
@@ -181,7 +181,7 @@
     }
   },
   "orders": {
-    "endpoint": "http://localhost:8080/api/order",
+    "endpoint": "http://vuestorefrontcoreshop.localhost/vsbridge/order?token={{token}}",
     "payment_methods_mapping": {
     },
     "offline_orders": {
@@ -229,15 +229,15 @@
   "stock": {
     "synchronize": true,
     "allowOutOfStockInCart": true,
-    "endpoint": "http://localhost:8080/api/stock"
+    "endpoint": "http://vuestorefrontcoreshop.localhost/vsbridge/stock"
   },
   "images": {
-    "baseUrl": "https://demo.vuestorefront.io/img/",
+    "baseUrl": "http://vuestorefrontcoreshop.localhost/img/",
     "productPlaceholder": "/assets/placeholder.jpg"
   },
   "install": {
     "is_local_backend": true,
-    "backend_dir": "../vue-storefront-api"
+    "backend_dir": "./vuestorefrontapi"
   },
   "demomode": false,
   "tax": {
